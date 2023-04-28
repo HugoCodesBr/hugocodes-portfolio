@@ -1,0 +1,19 @@
+@import 'variables';
+
+* {
+  font-family: $font-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}
+
+.dark-mode {
+  $color-dark: #fff;
+  $white: #333;
+}
