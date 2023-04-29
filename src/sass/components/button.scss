@@ -1,0 +1,28 @@
+@import '../variables';
+@import '../mixins';
+
+.button {
+  color: $color-dark;
+  border: 2px solid $color-dark;
+  padding: 12px;
+  font-weight: bold;
+  transition: all 200ms;
+  display: block;
+  width: max-content;
+
+  &.primary {
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: $color-secondary-light;
+    }
+  }
+}

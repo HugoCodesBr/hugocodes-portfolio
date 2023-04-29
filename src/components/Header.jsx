@@ -17,7 +17,6 @@ const Header = ({ changeTheme, darkTheme }) => {
   useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
-      console.log('rolou: ' + scrollPosition);
 
       if (scrollPosition > 1) {
         setScrollActive(true);

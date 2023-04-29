@@ -1,0 +1,149 @@
+@import '../variables';
+@import '../mixins';
+
+.banner {
+  padding: 101.88px 24px 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @include screen(desktop) {
+    display: grid;
+    grid-template-columns: auto 700px;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.banner__text {
+  margin-top: 1.5rem;
+
+  @include screen(desktop) {
+    order: 2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $white;
+    font-weight: bold;
+
+    @include screen(desktop) {
+      font-size: 4.25rem;
+    }
+  }
+
+  p {
+    color: $white;
+  }
+}
+
+.person-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  filter: $shadow;
+  width: 100%;
+  padding: 1.5rem;
+  height: 510px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: -8px;
+  background-position-y: center;
+  position: relative;
+  z-index: 1;
+  transition: 200ms;
+
+  @include screen(desktop) {
+    width: 477px;
+    height: 710px;
+  }
+
+  .button {
+    margin: 1.5rem auto 0;
+  }
+}
+
+.card__content {
+  text-align: center;
+}
+
+.card__photo {
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0);
+  }
+}
+
+.card__info {
+  margin-top: 10px;
+  color: $color-dark;
+
+  h3 {
+    font-size: 2.625rem;
+    line-height: 2.625rem;
+  }
+
+  p {
+    line-height: 1.25rem;
+    margin-top: 4px;
+  }
+}
+
+.card__share {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: block;
+    margin: 0 0.5rem;
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: $color-dark;
+    transition: 200ms;
+  }
+
+  #linkedin {
+    &:hover {
+      svg {
+        fill: #0a66c2;
+      }
+    }
+  }
+
+  #github {
+    &:hover {
+      svg {
+        fill: #2b3137;
+      }
+    }
+  }
+
+  #email {
+    &:hover {
+      svg {
+        fill: #ea4335;
+      }
+    }
+  }
+}

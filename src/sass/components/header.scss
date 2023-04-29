@@ -7,6 +7,7 @@
   border-bottom: 2px solid $white;
   position: fixed;
   top: 0;
+  z-index: 200;
 
   &.change-color {
     background-color: $white;
@@ -64,10 +65,18 @@
     .menu {
       background-color: $color-dark;
 
+      @include screen(desktop) {
+        background-color: transparent;
+      }
+
       a {
         background-color: $color-dark;
         color: $white;
         border-color: $color-grey-light;
+
+        @include screen(desktop) {
+          background-color: transparent;
+        }
       }
     }
   }

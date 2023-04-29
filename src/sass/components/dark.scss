@@ -1,0 +1,26 @@
+@import '../variables';
+@import '../mixins';
+
+.dark {
+  .person-card {
+    background-color: $color-dark;
+  }
+
+  .card__info {
+    h3,
+    p {
+      color: $white;
+    }
+  }
+
+  .card__share {
+    svg {
+      fill: $white;
+    }
+  }
+
+  .button {
+    border-color: $white;
+    color: $white;
+  }
+}

@@ -2,9 +2,11 @@
 @import 'mixins';
 
 body {
-  background: $color-dark;
   position: relative;
-  height: 200vh;
+}
+
+main {
+  z-index: 1;
 }
 
 * {
@@ -20,28 +22,27 @@ h6 {
   font-family: $font-primary;
 }
 
-.dark-mode {
-  background-color: $color-dark;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $white;
-  }
-
-  .container {
-    background-color: $color-dark;
-  }
-}
-
 .container {
   margin: 0 auto;
   padding: 0 20px;
 
   @include screen(desktop) {
     max-width: 1200px;
+  }
+}
+
+//Animações
+.animeLeft {
+  animation: animeLeft 400ms ease-out;
+}
+
+@keyframes animeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
