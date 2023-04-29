@@ -5,6 +5,72 @@
   display: block;
   width: 100%;
   border-bottom: 2px solid $white;
+  position: fixed;
+  top: 0;
+
+  &.change-color {
+    background-color: $white;
+    border-color: $color-dark;
+
+    .theme-changer {
+      border-color: $color-dark;
+      background-color: $color-grey-light;
+
+      svg {
+        fill: $color-dark;
+      }
+    }
+
+    .menu-burger {
+      span {
+        background-color: $color-dark;
+      }
+    }
+
+    .menu a {
+      @include screen(desktop) {
+        color: $color-dark;
+      }
+    }
+
+    &.dark {
+      background-color: $color-dark;
+      border-color: $white;
+
+      .theme-changer {
+        border-color: $white;
+        background-color: $color-grey-light;
+
+        svg {
+          fill: $white;
+        }
+      }
+
+      .menu-burger {
+        span {
+          background-color: $white;
+        }
+      }
+
+      .menu a {
+        @include screen(desktop) {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    .menu {
+      background-color: $color-dark;
+
+      a {
+        background-color: $color-dark;
+        color: $white;
+        border-color: $color-grey-light;
+      }
+    }
+  }
 }
 
 .header__content {
