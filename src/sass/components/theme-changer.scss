@@ -1,0 +1,65 @@
+@import '../variables';
+@import '../mixins';
+
+.theme-changer {
+  width: 66px;
+  height: 36px;
+  border: 2px solid $white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .changer__circle {
+      background-color: $color-secondary-light;
+
+      &.dark {
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+
+  > svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    fill: $white;
+    top: 7px;
+    z-index: -1;
+    opacity: 1;
+    transition: 200ms;
+
+    &:first-child {
+      left: 7px;
+    }
+
+    &:last-child {
+      right: 7px;
+    }
+  }
+}
+
+.changer__circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: $color-secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  transition: 200ms;
+
+  &.dark {
+    margin-left: 32px;
+    background-color: $color-primary;
+  }
+
+  svg {
+    fill: $white;
+    width: 18px;
+    height: 18px;
+  }
+}

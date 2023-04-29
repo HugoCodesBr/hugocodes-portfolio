@@ -1,0 +1,46 @@
+@import '../variables';
+@import '../mixins';
+
+.menu-burger {
+  margin-left: 1.5rem;
+
+  &.active {
+    span {
+      &:first-child {
+        transform: rotate(45deg) translateY(1px) translateX(2px);
+        margin: 0;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translateY(-1px) translateX(2px);
+        margin: 0;
+      }
+    }
+  }
+
+  span {
+    width: 26px;
+    height: 2px;
+    background-color: $white;
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    transition: 200ms;
+
+    &:first-child {
+      margin-bottom: 6px;
+    }
+
+    &:last-child {
+      margin-top: 6px;
+    }
+
+    @include screen(desktop) {
+      display: none;
+    }
+  }
+}

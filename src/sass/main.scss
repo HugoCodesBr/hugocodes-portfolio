@@ -1,4 +1,10 @@
 @import 'variables';
+@import 'mixins';
+
+body {
+  background: $color-dark;
+  position: relative;
+}
 
 * {
   font-family: $font-secondary;
@@ -14,6 +20,27 @@ h6 {
 }
 
 .dark-mode {
-  $color-dark: #fff;
-  $white: #333;
+  background-color: $color-dark;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+
+  .container {
+    background-color: $color-dark;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include screen(desktop) {
+    max-width: 1200px;
+  }
 }
