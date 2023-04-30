@@ -29,6 +29,12 @@
     }
 
     .menu a {
+      &:hover {
+        &::after {
+          background-color: $color-dark;
+        }
+      }
+
       @include screen(desktop) {
         color: $color-dark;
       }
@@ -76,6 +82,13 @@
 
         @include screen(desktop) {
           background-color: transparent;
+        }
+      }
+      a {
+        &:hover {
+          &::after {
+            background-color: $white;
+          }
         }
       }
     }

@@ -1,0 +1,96 @@
+@import '../variables';
+@import '../mixins';
+
+.projects__items {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.projects__item {
+  display: grid;
+  gap: 2rem;
+
+  &:nth-child(even) {
+    @include screen(desktop) {
+      grid-template-columns: 1fr 668px;
+    }
+
+    .projects__thumb {
+      @include screen(tablet) {
+        order: 2;
+      }
+    }
+
+    .projects__info {
+      @include screen(tablet) {
+        text-align: right;
+      }
+    }
+
+    .projects__buttons {
+      .button {
+        @include screen(tablet) {
+          margin-right: 0;
+          margin-left: 1rem;
+        }
+      }
+
+      @include screen(tablet) {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  @include screen(tablet) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  @include screen(desktop) {
+    grid-template-columns: 668px 1fr;
+  }
+}
+
+.projects__thumb {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: $border-radius;
+  filter: $shadow;
+
+  @include screen(tablet) {
+    height: 450px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.projects__info {
+  color: $color-dark;
+  display: grid;
+  gap: 1rem;
+
+  @include screen(tablet) {
+    height: max-content;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.projects__buttons {
+  display: flex;
+
+  .button {
+    margin-right: 0.75rem;
+  }
+}

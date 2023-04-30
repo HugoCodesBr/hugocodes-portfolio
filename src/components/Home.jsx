@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import MainBanner from './Banner/MainBanner';
 import Header from './Header';
 import Techs from './Techs';
+import Projects from './Projects';
 
 const Home = () => {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -24,6 +25,7 @@ const Home = () => {
       <main className={darkTheme ? 'dark' : ''}>
         <MainBanner />
         <Techs />
+        <Projects />
       </main>
     </>
   );
