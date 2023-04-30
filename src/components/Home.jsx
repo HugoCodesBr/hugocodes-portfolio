@@ -4,6 +4,7 @@ import MainBanner from './Banner/MainBanner';
 import Header from './Header';
 import Techs from './Techs';
 import Projects from './Projects';
+import Contact from './Contact';
 
 const Home = () => {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -26,6 +27,7 @@ const Home = () => {
         <MainBanner />
         <Techs />
         <Projects />
+        <Contact />
       </main>
     </>
   );

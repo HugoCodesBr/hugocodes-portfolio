@@ -1,0 +1,98 @@
+@import '../variables';
+@import '../mixins';
+
+.contact {
+  background-color: $color-grey;
+  padding: 2.5rem 0;
+}
+
+.contact__card {
+  background-color: $white;
+  filter: $shadow;
+  border-radius: $border-radius;
+  padding: 2rem;
+  margin-top: 1.5rem;
+
+  @include screen(desktop) {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin: 1.5rem auto 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: $color-dark;
+  }
+
+  svg {
+    fill: $color-dark;
+  }
+
+  > ul {
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-grey;
+
+    @include screen(desktop) {
+      padding: 0;
+      border: none;
+      border-right: 1px solid $color-grey;
+      padding-right: 2rem;
+    }
+
+    li {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.contact__share {
+  padding-top: 2rem;
+  color: $color-dark;
+
+  @include screen(desktop) {
+    padding: 0;
+    padding-left: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      transition: 200ms;
+    }
+  }
+
+  li {
+    margin-top: 16px;
+    margin-right: 1rem;
+  }
+
+  a {
+    &:hover {
+      svg {
+        fill: $color-primary;
+      }
+    }
+  }
+}

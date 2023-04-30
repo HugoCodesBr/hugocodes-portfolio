@@ -45,4 +45,24 @@ main {
   .projects__info {
     color: $white;
   }
+
+  .contact {
+    background-color: $color-dark-medium;
+  }
+
+  .contact__card {
+    background-color: $color-dark-light;
+
+    ul {
+      color: $white;
+    }
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  .contact__share {
+    color: $white;
+  }
 }
