@@ -27,7 +27,7 @@
     height: 18px;
     fill: $white;
     top: 7px;
-    z-index: -1;
+    z-index: 2;
     opacity: 1;
     transition: 200ms;
 
@@ -51,6 +51,8 @@
   justify-content: center;
   margin-left: 2px;
   transition: 200ms;
+  position: relative;
+  z-index: 3;
 
   &.dark {
     margin-left: 32px;

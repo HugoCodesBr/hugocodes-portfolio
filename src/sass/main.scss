@@ -31,6 +31,36 @@ h6 {
   }
 }
 
+.title {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-dark;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: $color-primary;
+    position: absolute;
+    top: calc(50% - 4px);
+  }
+
+  &::before {
+    left: -42px;
+  }
+
+  &::after {
+    right: -42px;
+  }
+}
+
 //Animações
 .animeLeft {
   animation: animeLeft 400ms ease-out;

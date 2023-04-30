@@ -1,0 +1,97 @@
+@import '../variables';
+@import '../mixins';
+
+.techs {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    margin-top: 2.5rem;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    width: 150px;
+    height: 150px;
+    border-radius: $border-radius;
+    filter: $shadow;
+    user-select: none;
+
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    opacity: 0;
+    bottom: -48px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background-color: $color-dark;
+    color: $white;
+    font-weight: bold;
+    font-size: 0.875rem;
+    transition: 200ms;
+  }
+
+  svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  #HTML5 {
+    svg {
+      fill: #d84924;
+    }
+  }
+
+  #CSS3 {
+    svg {
+      fill: #126db1;
+    }
+  }
+
+  #Javascript {
+    svg {
+      fill: #e4d04b;
+    }
+  }
+
+  #SASS {
+    svg {
+      fill: #c36192;
+    }
+  }
+
+  #ReactJS {
+    svg {
+      fill: #00cdf2;
+    }
+  }
+
+  #Git {
+    svg {
+      fill: #e44c30;
+    }
+  }
+
+  #Bootstrap {
+    svg {
+      fill: #7811ee;
+    }
+  }
+}

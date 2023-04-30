@@ -2,6 +2,7 @@ import '../sass/components/dark.scss';
 import { useEffect, useState } from 'react';
 import MainBanner from './Banner/MainBanner';
 import Header from './Header';
+import Techs from './Techs';
 
 const Home = () => {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
       <Header changeTheme={changeTheme} darkTheme={darkTheme} />
       <main className={darkTheme ? 'dark' : ''}>
         <MainBanner />
+        <Techs />
       </main>
     </>
   );
