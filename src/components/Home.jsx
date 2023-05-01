@@ -5,6 +5,7 @@ import Header from './Header';
 import Techs from './Techs';
 import Projects from './Projects';
 import Contact from './Contact';
+import Footer from './Footer';
 
 const Home = () => {
   const [darkTheme, setDarkTheme] = useState(false);
@@ -29,6 +30,7 @@ const Home = () => {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 };

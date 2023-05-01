@@ -7,6 +7,11 @@ body {
 
 main {
   z-index: 1;
+  padding-bottom: 252px;
+
+  @include screen(tablet) {
+    padding-bottom: 196px;
+  }
 }
 
 * {

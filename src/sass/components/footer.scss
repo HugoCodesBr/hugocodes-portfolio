@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../mixins';
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__top {
+  background-color: $color-secondary;
+  padding: 2rem 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include screen(tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    color: $color-dark;
+    order: 2;
+
+    @include screen(tablet) {
+      order: 1;
+    }
+  }
+
+  img {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    display: block;
+
+    @include screen(tablet) {
+      order: 2;
+    }
+  }
+}
+
+.footer__end {
+  background-color: $color-dark;
+  color: $white;
+  text-align: center;
+  padding: 1rem 0;
+}
