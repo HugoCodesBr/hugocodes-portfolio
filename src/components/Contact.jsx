@@ -22,7 +22,7 @@ const contactShare = [
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="container contact__content">
         <h2 className="title">contato</h2>
         <div className="contact__card">

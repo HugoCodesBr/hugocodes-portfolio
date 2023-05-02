@@ -19,8 +19,10 @@
 
 .banner__text {
   margin-top: 1.5rem;
+  min-height: 168px;
 
   @include screen(desktop) {
+    min-height: unset;
     order: 2;
   }
 

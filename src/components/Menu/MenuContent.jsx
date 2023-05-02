@@ -9,13 +9,13 @@ const MenuContent = ({ menuOpen }) => {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a href="#techs">Tecnologias</a>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <a href="#projects">Projetos</a>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
     </div>

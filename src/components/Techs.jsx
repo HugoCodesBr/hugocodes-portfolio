@@ -21,7 +21,7 @@ const techs = [
 
 const Techs = () => {
   return (
-    <section className="container techs">
+    <section id="techs" className="container techs">
       <h2 className="title">TECNOLOGIAS</h2>
       <ul>
         {techs.map((tech) => (
