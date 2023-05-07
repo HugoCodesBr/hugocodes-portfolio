@@ -5,6 +5,7 @@ import { GrMail } from 'react-icons/gr';
 import Button from '../Button';
 import PersonPhoto from '../../assets/eu.jpg';
 import Waves from '../../assets/waves.png';
+import Curriculum from '../../assets/curriculum.pdf';
 import { useEffect, useState } from 'react';
 
 const share = [
@@ -26,7 +27,7 @@ const share = [
 ];
 
 const text =
-  'Aqui você vai encontrar um resumo sobre mim, minha carreira e as tecnologias com que trabalho. Logo a baixo você encontra alguns dos principais projetos em que eu já trabalhei.';
+  'Fico feliz por sua visita aqui. Aqui ao lado você pode conhecer minhas redes, entrar em contato por email e baixar meu CV (caso não tenha vindo por ele). Logo a baixo você encontra as tecnologias que trabalho até o momento e os principais projetos em que eu já trabalhei.';
 
 const MainBanner = () => {
   const [textFull, setTextFull] = useState(text);
@@ -45,7 +46,7 @@ const MainBanner = () => {
   return (
     <div className="banner" style={{ backgroundImage: `url(${Banner})` }}>
       <div className="banner__text">
-        <h2>Olá, seja bem vindo!</h2>
+        <h2>Olá, Seja bem vindo!</h2>
         <p>{textOutput}</p>
       </div>
       <div
@@ -69,7 +70,7 @@ const MainBanner = () => {
               </li>
             ))}
           </ul>
-          <Button color="secondary" link="https://www.google.com">
+          <Button color="secondary" link={Curriculum}>
             Download CV
           </Button>
         </div>

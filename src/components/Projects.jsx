@@ -1,28 +1,30 @@
 import '../sass/components/projects.scss';
 import Dogs from '../assets/dogs.jpg';
+import MyTasks from '../assets/mytasks.png';
+import MoviesLib from '../assets/movieslib.png';
 import Button from './Button';
 
 const projects = [
   {
     title: 'Dogs',
-    desc: 'Projeto de rede social fictícia para cachorros, realizado durante o curso de React da Origamid',
+    desc: 'Projeto de rede social fictícia para cachorros realizado durante o curso de React da Origamid, usando React Hooks, Consumo de API com o Fetch e CSS modules',
     thumb: Dogs,
     app: 'https://hugocodes-dogs.netlify.app/',
     github: 'https://github.com/HugoCodesBr/dogs',
   },
   {
-    title: 'Teste',
-    desc: 'Projeto de rede social fictícia para cachorros, realizado durante o curso de React da Origamid',
-    thumb: Dogs,
-    app: 'https://hugocodes-dogs.netlify.app/',
-    github: 'https://github.com/HugoCodesBr/dogs',
+    title: 'My Tasks',
+    desc: 'Projeto de um gerenciador de tarefas com funções de edição, remoção e clonclusão das mesmas feito em React (Layout desenhado pro mim no Figma), usando React Hooks, Local Storage e SASS',
+    thumb: MyTasks,
+    app: 'https://hugocodes-mytasks.netlify.app/',
+    github: 'https://github.com/HugoCodesBr/my-tasks',
   },
   {
-    title: 'Projeto',
-    desc: 'Projeto de rede social fictícia para cachorros, realizado durante o curso de React da Origamid',
-    thumb: Dogs,
-    app: 'https://hugocodes-dogs.netlify.app/',
-    github: 'https://github.com/HugoCodesBr/dogs',
+    title: 'MoviesLib',
+    desc: 'Projeto de uma catálogo de filmes com funções de busca e página internas feito em React consumindo a API do TMDB, usando React Hooks, React Router Dom e Fetch',
+    thumb: MoviesLib,
+    app: 'https://hugocodes-movieslib.netlify.app/',
+    github: 'https://github.com/HugoCodesBr/movies_lib',
   },
 ];
 
