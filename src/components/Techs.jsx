@@ -6,7 +6,7 @@ import {
   DiSass,
   DiReact,
   DiGit,
-  DiBootstrap,
+  DiFirebase,
 } from 'react-icons/di';
 
 const techs = [
@@ -16,7 +16,7 @@ const techs = [
   { name: 'SASS', icon: <DiSass /> },
   { name: 'ReactJS', icon: <DiReact /> },
   { name: 'Git', icon: <DiGit /> },
-  { name: 'Bootstrap', icon: <DiBootstrap /> },
+  { name: 'Firebase', icon: <DiFirebase /> },
 ];
 
 const Techs = () => {

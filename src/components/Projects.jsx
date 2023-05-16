@@ -2,6 +2,7 @@ import '../sass/components/projects.scss';
 import Dogs from '../assets/dogs.jpg';
 import MyTasks from '../assets/mytasks.png';
 import MoviesLib from '../assets/movieslib.png';
+import Chamados from '../assets/chamados.png';
 import Button from './Button';
 
 const projects = [
@@ -18,6 +19,13 @@ const projects = [
     thumb: MyTasks,
     app: 'https://hugocodes-mytasks.netlify.app/',
     github: 'https://github.com/HugoCodesBr/my-tasks',
+  },
+  {
+    title: 'Chamados',
+    desc: 'Projeto de um dashboard de chamados com login, paginação, adição de clientes e tickets feito em React, React Hooks, Firebase, React Router Dom e SASS',
+    thumb: Chamados,
+    app: 'https://hugocodes-chamados.netlify.app/',
+    github: 'https://github.com/HugoCodesBr/chamados',
   },
   {
     title: 'MoviesLib',
