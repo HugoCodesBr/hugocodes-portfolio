@@ -3,6 +3,11 @@ import Dogs from '../assets/dogs.jpg';
 import MyTasks from '../assets/mytasks.png';
 import MoviesLib from '../assets/movieslib.png';
 import Chamados from '../assets/chamados.png';
+import Duopass from '../assets/duopass.png';
+import Iguatemi from '../assets/iguatemi.png';
+import Bsurbanismo from '../assets/bsurbanismo.png';
+import Cocobambu from '../assets/cocobambu.png';
+import Humanize from '../assets/humanize.png';
 import Button from './Button';
 
 const projects = [
@@ -34,6 +39,41 @@ const projects = [
     app: 'https://hugocodes-movieslib.netlify.app/',
     github: 'https://github.com/HugoCodesBr/movies_lib',
   },
+  {
+    title: 'Duopass',
+    desc: 'Projeto de website com foco no turismo feito em Wordpress usando HTML, SASS, Javascript, Jquery e Swiper',
+    thumb: Duopass,
+    app: 'https://duopass.com.br/',
+    github: '',
+  },
+  {
+    title: 'Iguatemi',
+    desc: 'Projeto de website para shopping center feito em Wordpress usando HTML, SASS, Javascript, Jquery e Swiper',
+    thumb: Iguatemi,
+    app: 'https://www.igtfortaleza.com.br/',
+    github: '',
+  },
+  {
+    title: 'BS Urbanismo',
+    desc: 'Projeto de website para empresa de arquitetura e urbanismo feito em Wordpress usando HTML, SASS, Javascript, Jquery e Swiper',
+    thumb: Bsurbanismo,
+    app: 'https://www.bsparurbanismo.com.br/',
+    github: '',
+  },
+  {
+    title: 'Coco Bambu',
+    desc: 'Projeto de website de restaurante feito em Wordpress usando HTML, SASS, Javascript, Jquery e Swiper',
+    thumb: Cocobambu,
+    app: 'https://cocobambu.com/',
+    github: '',
+  },
+  {
+    title: 'Instituto Humanize',
+    desc: 'Projeto de website de instituição feito em Wordpress usando HTML, SASS, Javascript, Jquery e Swiper',
+    thumb: Humanize,
+    app: 'https://www.ihumanize.org/',
+    github: '',
+  },
 ];
 
 const Projects = () => {
@@ -53,9 +93,11 @@ const Projects = () => {
                 <Button color="secondary" link={project.app}>
                   Ver Projeto
                 </Button>
-                <Button color="primary" link={project.github}>
-                  Ver Código
-                </Button>
+                {project.github !== '' && (
+                  <Button color="primary" link={project.github}>
+                    Ver Código
+                  </Button>
+                )}
               </div>
             </div>
           </div>
